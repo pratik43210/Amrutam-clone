@@ -5,11 +5,15 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+:root{
+    --green:rgb(81, 130, 81);
+}
+
 .wrapper-1{
     position: relative;
     width: 100%;
     padding: 0 10px;
-    /* margin: 0 auto; */
+    margin: 20px 0;
 }
 
 .wrapper-1 .carousel-1{
@@ -28,13 +32,15 @@
     border-radius: 5%;
 }
 
-.wrapper-1 i{
+#l1,#r1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     position: absolute;
     top:50%;
     z-index: 100;
     height: 40px;
-    line-height: 40px;
     width: 40px;
     text-align: center;
     /* margin: 0 20px; */
@@ -43,30 +49,29 @@
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background 0.2s linear;
 }
 
-.wrapper-1 i:nth-child(2){
+#l1{
     left:50px;
     opacity: 0;
 }
 
-.wrapper-1:hover i:nth-child(2){
+.wrapper-1:hover #l1{
     opacity:1;
     transform: translateX(-25px);
 }
 
-.wrapper-1 i:nth-child(3){
+#r1{
     opacity: 0;
     right:50px;
 }
 
-.wrapper-1:hover i:nth-child(3){
+.wrapper-1:hover #r1{
     opacity: 1;
     right:50px;
     transform: translateX(25px);
 }
 
-.c1-btn:hover{
-    
-    background: rgb(33, 66, 33);
+#l1:hover,#r1:hover{
+    background-color: var(--green);
 }
 
 .slide-1{
@@ -91,25 +96,6 @@
     z-index: 100;
 }
 
-.s1-i1-l1 > button > i{
-    background-color: transparent;
-    margin: -5px -10px;
-    padding: 0;
-    position: relative;
-}
-
-.s1-i1-l1 > button{
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 1px 20px;
-    border: none;
-    background-color:rgb(33, 66, 33);
-    border-radius: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
 .s1-i1-l2{
     position: absolute;
     display: flex;
@@ -121,23 +107,29 @@
     z-index: 100;
 }
 
-.s1-i1-l2 > button > i{
-    background-color: transparent;
-    margin: -5px -10px;
-    padding: 0;
-    position: relative;
-}
-
-.s1-i1-l2 > button{
+.s1-i1-l1 > button, .s1-i1-l2 > button{
     color: white;
     display: flex;
+    gap: 5px;
+    width: max-content;
     align-items: center;
-    padding: 1px 20px;
+    padding: 10px 20px;
     border: none;
-    background-color:rgb(33, 66, 33);
+    background-color: var(--green);
     border-radius: 10px;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.s1-i1-l1 > button > i, .s1-i1-l2 > button > i{
+    background-color: transparent;
+    margin: -5px -10px;
+    padding: 0;
+}
+
+.orderBt{
+    display: flex;
+    gap:10px
 }
 
 @media screen and (max-width:576px) {
@@ -148,12 +140,39 @@
         font-size: 2.5vw;
     }
 }
+/* second section */
+.sec-2{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin: 20px 0;
+}
+
+.sec-2-container{
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    overflow: auto;
+}
+
+.sec-2-container p{
+    /* flex-shrink: 0; */
+    cursor: pointer;
+    border: solid 1px var(--green);
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in;
+}
+
+.sec-2-container p:hover{
+    color: white;
+    background-color: var(--green);
+}
 
 
 /* second carousel */
-.card{
+.card-img{
     position: relative;
-    width: fit-content;
 }
 
 /* icons */
@@ -167,8 +186,10 @@
     padding: 2px;
     background-color: white;
     border-radius: 50%;
-    transition: background 0.5s ease-in, color 0.5s ease-in;
+    transition: background 0.3s ease-in, color 0.3s ease-in;
 }
+
+
 
 .card-btns i:hover{
     background: black;
@@ -187,5 +208,138 @@
 }
 
 .shark-logo{
+    white-space: nowrap;
     position: absolute;
+    background-color: rgb(60, 81, 127);
+    top:2%;
+    color: white;
+    right: 2%;
+    line-height: 40px;
+    padding: 0 5px;
+    border-radius: 20px;
+}
+
+.carousel-2 :where(.card, .card-img){
+    display: flex;
+}
+
+.card{
+    /* max-width:270px; */
+    flex-direction: column;
+}
+
+.card-img{
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in, content 0.5s ease-in;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-2{
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carousel-2{
+    display: grid;
+    gap:20px;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% * 1/4 - 15px);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+#l2,#r2{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top:35%;
+    z-index: 100;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    /* margin: 0 20px; */
+    color: white;
+    background-color: rgb(18, 18, 18);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, background-color 0.2s linear;
+}
+
+.wrapper-2 #l2{
+    left:40px;
+}
+
+.wrapper-2:hover #l2{
+    opacity:1;
+    transform: translateX(-20px);
+}
+
+.wrapper-2 #r2{
+    right:40px;
+}
+
+.wrapper-2:hover #r2{
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+#l2:hover,#r2:hover{
+    background-color: var(--green);
+}
+
+#c2-i1:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_bf3abc81-53ad-4988-8e3e-42707407ba16.jpg?v=1661595405&width=400');
+}
+
+#c2-i2:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_a01afc12-39aa-4fd1-acc4-c72900a48241.jpg?v=1661595778&width=400');
+}
+
+#c2-i3:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_22791ab8-1978-41a0-aee7-85a64ce307bc.jpg?v=1661848730&width=400');
+}
+
+#c2-i4:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_44a23684-6aff-42ee-9227-0b0131c3c4ac.jpg?v=1661594825&width=400');
+}
+
+#c2-i5:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_8789b604-5ff0-4d59-af15-97d954cac931.jpg?v=1661581955&width=400');
+}
+
+#c2-i6:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_5f1bb9b2-7196-4492-8661-602b2df6ab7f.jpg?v=1661596588&width=400');
+}
+
+#c2-i7:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_e0419831-0bff-4004-83f9-520344b55749.jpg?v=1661597328&width=400');
+}
+
+#c2-i8:hover{
+    content: url('https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_417177d7-5dd9-4652-a73d-3d1a2c7e275a.jpg?v=1661596172&width=400');
+}
+
+.s3-img img{
+    flex-grow: 1;
+    max-width: 540px;
+    width: 50%;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+    border-radius: 20px;
 }

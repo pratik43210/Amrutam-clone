@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
     <script src="https://kit.fontawesome.com/08b1c2a6bb.js" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
     <title>Document</title>
@@ -107,17 +108,17 @@
         <section class="wrapper-1">
             <div class="carousel-1">
                 <div class="slide-1">
-                    <img id="s1-im1" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/Keyliv_capsules_banner.jpg?v=1673952224&width=2000">
+                    <img alt="slide image" id="s1-im1" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/Keyliv_capsules_banner.jpg?v=1673952224&width=2000">
                     <a class="s1-link s1-i1-l1" href="#">
                         <h2>Liver Health & Detox</h2>
-                        <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <button><div class="orderBt">Order Now <div><i class="fa-solid fa-arrow-right"></i></div></div></button>
                     </a>
                 </div>
                 <div class="slide-1">
-                    <img  id="s1-im2" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/nari_sondarya_capsule_newsletter.jpg?v=1673952224&width=2000">
+                    <img alt="slide image 2" id="s1-im2" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/nari_sondarya_capsule_newsletter.jpg?v=1673952224&width=2000">
                     <a class="s1-link s1-i1-l2" href="#">
                         <h2>PCOD, Period Cramps & Mood Swings</h2>
-                        <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                        <button><div class="orderBt">Order Now <div><i class="fa-solid fa-arrow-right"></i></div></div></button>
                     </a>
                 </div>
             </div>
@@ -126,30 +127,133 @@
         </section>
 
         <section class="sec-2">
-            <div class="sec2-container">
-                <h3>Hair Care</h3>
-                <h3>Skin Care</h3>
-                <h3>Health Care</h3>
+            <div class="sec-2-container">
+                <p class="font-white bg-green">Hair Care</p>
+                <p class="font-green">Skin Care</p>
+                <p class="font-green">Health Care</p>
             </div>
         </section>
         <section class="wrapper-2">
             <ul class="carousel-2">
                 <li class="card">
-                    <img src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Benefits_bf3abc81-53ad-4988-8e3e-42707407ba16.jpg?v=1661595405&width=400">
-                    <div class="shark-logo">Loved by Sharks 🦈</div>
-                    <div class="card-btns">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-regular fa-heart"></i>
+                    <div class="card-img">
+                        <img id="c2-i1" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Kuntal-Care-Hair-Spa-Re-shot-1-scaled.jpg?v=1658568746&width=100%20100w">
+                        <div class="shark-logo">Loved by Sharks 🦈</div>
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Kuntal Care Hair Spa | Do-It-Yourself Hair Treatment</a>
+                        <div class="price fade">Rs. 649.00</div>
                     </div>
                 </li>
-                <li class="card"></li>
-                <li class="card"></li>
-                <li class="card"></li>
-                <li class="card"></li>
-                <li class="card"></li>
-                <li class="card"></li>
-                <li class="card"></li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i2" alt="carousel 2 image" src="//cdn.shopify.com/s/files/1/0645/9650/8925/products/DSC03631-3-1psd1-1_1eab3686-bd5e-45f4-9aae-bcf1b9517c5e.jpg?v=1655351629&width=100 100w">
+                        <div class="shark-logo">Loved by Sharks 🦈</div>
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Kuntal Care Herbal Shampoo | Healthy, Natural and Dynamic Hair</a>
+                        <div class="price fade">Rs. 599.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i3" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Bhringraj-Hair-Therapy-1-min_f2cc2d36-7f48-40db-b986-ab5c7309ec15.jpg?v=1655350902&width=100 100w">
+                        <div class="shark-logo">Loved by Sharks 🦈</div>
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Bhringraj Hair Therapy | 2-in-1 Conditioner and Shampoo</a>
+                        <div class="price fade">Rs. 749.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i4" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Kuntal-Care-Hair-Oil-1-min-scaled_144326e8-b8fe-430b-b79c-f7771f0fc2c6.jpg?v=1655351552&width=100 100w">
+                        <div class="shark-logo">Loved by Sharks 🦈</div>
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Kuntal Care Hair Oil | For Hair Revitalizing and Strengthening</a>
+                        <div class="price fade">Rs. 599.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i5" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/BrowserPreview_tmp-3-scaled_6653b717-6e07-453b-8aab-488e63f4e779.gif?v=1655350575&width=100 100w">
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Kuntal Care | Do-it-yourself Hair Spa | Travel Pack</a>
+                        <div class="price fade">Rs. 112.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i6" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/BrowserPreview_tmp_6f2d45f6-7d5e-4442-b26e-d313785aff73.jpg?v=1655351801&width=100 100w">
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Nari Sondarya Malt | Complete Care for Women's Health and Beauty</a>
+                        <div class="price fade">Rs. 711.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i7" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Onion-Oil-1--scaled_14e3fd1d-36ea-4ddd-9b52-71495537c2d0.jpg?v=1655351947&width=100 100w">
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Onion Oil | Medicinal Recipe for Hair Regrowth</a>
+                        <div class="price fade">Rs. 449.00</div>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img id="c2-i8" alt="carousel 2 image" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Madhu-30ml-scaled_bcf6f0e9-421d-4863-a830-e6f66b831b54.jpg?v=1655351723&width=100 100w">
+                        <div class="card-btns">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="desc">
+                        <a href="#" class="no-decoration">Amrutam Madhu Panchamrut | Herbs Enriched Honey</a>
+                        <div class="price fade">Rs. 65.00</div>
+                    </div>
+                </li> 
             </ul>
+            <i id="l2" class="fa-solid fa-chevron-left c2-btn"></i>
+            <i id="r2" class="fa-solid fa-chevron-right c2-btn"></i>
+        </section>
+        <section class="section-3">
+            <div class="container-s3">
+                <div class="s3-img">
+                    <img src="https://cdn.shopify.com/s/files/1/0645/9650/8925/products/Aloe-Vera-Gel--scaled_55b82e41-212e-41df-8132-e1511e2856d2.jpg?v=1655350092&width=400" alt="amrutam aloe-vera">
+                </div>
+                <div class="info-s3"></div>
+            </div>
         </section>
     </article>
     <footer></footer>

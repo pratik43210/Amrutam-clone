@@ -1,0 +1,66 @@
+@media screen and (max-width:576px) {
+    .s1-link{
+        font-size: 2.5vw;
+    }
+    button{
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .carousel-2{
+        grid-auto-columns: calc(100% * 1/2 - 10px);
+    }
+}
+
+@media screen and (max-width:436px) {
+    .carousel-2{
+        grid-auto-columns: calc(100% - 1px);
+    }
+}
+
+@media screen and (max-width:576px){
+    .sec-2-container{
+        padding: 0 20px;
+        width: 80vw;
+        gap:10%
+    }
+    .sec-2-container p{
+        white-space: nowrap;
+        font-size: 2.5vw;
+        padding: 2px 10px;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+.fade{
+    opacity:0.5;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.font-black{
+    color: black;
+}
+
+.font-white{
+    color:white;
+}
+
+.font-green{
+    color: rgb(81, 130, 81);
+}
+
+.bg-green{
+    background-color: rgb(81, 130, 81);
+}
+
+.dragging{
+    cursor:grab;
+    /* user-select: none; */
+}

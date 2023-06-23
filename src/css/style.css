@@ -9,6 +9,50 @@
     --green:rgb(81, 130, 81);
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 245, 235);
+    position: sticky;
+    z-index: 200;
+    width: 100vw;
+    top: 0;
+}
+
+.brand{
+    width: 250px;
+}
+
+.header-main{
+    padding: 0 20px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    max-width: 1100px;
+    margin: 10px auto;
+    width: 90%;
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+}
+
+
+.header-icons input{
+    line-height: 30px;
+    width:40%;
+    border-radius: 20px;
+    border:solid 1px var(--green);
+}
+
 .wrapper-1{
     position: relative;
     width: 100%;
@@ -341,10 +385,12 @@
     max-width: 1100px;
     margin: 20px auto;
     padding: 20px;
+    background-color: rgb(253, 245, 235);
 }
 
 .container-s3{
     display: flex;
+    padding: 20px 0;
 }
 
 .info-s3{
@@ -371,13 +417,16 @@
     align-items: center;
 }
 
-.add-btn,.remove-btn, .add-rem input{
+.add-btn,.remove-btn{
     border: none;
     width: 30px;
     text-align: center;
 }
 
 .add-rem input{
+    text-align: center;
+    border: none;
+    width: 50px;
     font-size: 20px;
     padding-left: 10px;
 }
@@ -689,27 +738,25 @@
     font-weight: 500;
 }
 
-[class*=".s10-info-"]{
-    font-size: 1.6rem;
-    font-weight: 500;
-    text-align: center;
-    color: var(--green);
-}
-
 
 .s7-info{
+    height: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .s7-info-container{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% * 1/2);
+    align-items: center;
 }
 
 .s7-info-container img{
-    width: 50%;
+    width: 100%;
     height:max-content;
-    margin-left: 20px;
+    margin: 10px;
     border-radius: 20px;
 }
 
@@ -736,10 +783,11 @@
     height: auto;
     display: grid;
     grid-auto-columns: calc(100% * 1/3 - 14px);
-    grid-auto-rows: 3;
+    grid-auto-flow: column;
     gap: 20px;
+    color: var(--green);
 
-    grid-template-areas: 'title title title' 'card1 card2 card3' 'desc1 des2 desc3';
+    grid-template-areas: 'title title title' 'card1 card2 card3' 'desc1 desc2 desc3';
 }
 
 .section-10 img{
@@ -753,6 +801,11 @@
     grid-area: title;
 }
 
+.section-10 h2{
+    font-weight: 400;
+    text-align: center;
+}
+
 
 .s10-c1{
     grid-area: card1;
@@ -764,6 +817,18 @@
 
 .s10-c3{
     grid-area: card3;
+}
+
+.s10-info1{
+    grid-area: desc1;
+}
+
+.s10-info2{
+    grid-area: desc2;
+}
+
+.s10-info3{
+    grid-area: desc3;
 }
 
 [class*='section-']{
@@ -800,6 +865,19 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.s9-card button{
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    transition: background-color 0.2s ease-in;
+}
+
+.s9-card button:hover{
+    background-color: black;
+    color:white
 }
 
 .s9-title{
@@ -846,4 +924,100 @@
     letter-spacing: 0.2rem;
     word-spacing: 0.3rem;
     margin-bottom: 10px;
+}
+
+.play-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.6rem;
+}
+
+.play-link .play-icon{
+    color: rgb(24, 94, 255);
+}
+
+footer{
+    font-weight: 300;
+    background-color: rgb(253, 245, 235);
+    display: grid;
+    padding: 20px;
+
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-auto-columns: calc(100%/4);
+    justify-content: space-around;
+
+    grid-template-areas: 'one two three four' 'five six - -';
+}
+
+.footer-1{
+    grid-area: one;
+}
+
+.footer-2{
+    grid-area: two;
+}
+
+.footer-3{
+    grid-area: three;
+}
+
+.footer-4{
+    grid-area: four;
+}
+
+.footer-5{
+    grid-area: five;
+}
+
+.footer-6{
+    grid-area: six;
+}
+
+.foot h1, .foot h2{
+    font-weight: 300;
+    font-size:1.2rem;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.foot h1{
+    
+    color: var(--green);
+}
+
+.f1-content ul{
+    list-style: none;
+}
+
+.foot img{
+    width: 100%;
+    max-width: 260px;
+}
+
+.subscribe{
+    display: flex;
+    justify-content:flex-start;
+    width: 80%;
+}
+
+.subscribe input{
+    width: 60%;
+    padding-left: 10px;
+    line-height: 40px;
+    border-radius: 25px 0 0 25px;
+    border: solid 1px rgba(0, 0, 0, 0.425);
+}
+
+.subscribe button{
+    background-color: black;
+    color: white;
+    padding: 0 5%;
+    border-radius: 0 25px 25px 0;
+    border: none;
+}
+
+.subscribe button:hover{
+    background-color: rgb(83, 186, 255);
 }

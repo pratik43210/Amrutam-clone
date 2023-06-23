@@ -132,3 +132,17 @@ arrowBtns4.forEach(btn=>{
         carousel4.scrollLeft+=btn.id==="l4"?-imgWidthC1:imgWidthC1;
     });
 });
+
+// section 3 increment decrement on + -
+const add=document.querySelector('.add-btn');
+const remove=document.querySelector('.remove-btn');
+const netQty=document.querySelector('.qty');
+
+add.addEventListener('click', (e)=>{
+    netQty.value++;
+})
+
+remove.addEventListener('click', (e)=>{
+    if(netQty.value>1) netQty.value--;
+    else netQty.value='';
+})

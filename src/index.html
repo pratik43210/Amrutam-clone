@@ -14,18 +14,23 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="green">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <header class="font-green header">
+        <div class="header-main">
+            <div>📞 +91 ********</div>
+            <img class="brand" src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/only_text_Amrutam_Logo_in_Green-09_5580cc82-5bb1-43d6-9ed8-f5d51c04d1f8.png?v=1658129548&width=200%201x" alt="brand">
+            <div class="header-icons">
+                <input type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
         </div>
-        <nav class="navbar sidebar">
-            <ul>
+        <nav class="navbar">
+            <ul class="navbar-inner">
                 <li>
                     <a href="#">
-                        Hair
-                        <div>></div>
+                        Hair<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -33,8 +38,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Skin
-                        <div>></div>
+                        Skin<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -42,8 +46,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Health
-                        <div>></div>
+                        Health<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -51,8 +54,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Lifestyle
-                        <div>></div>
+                        Lifestyle<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -60,8 +62,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Community
-                        <div>></div>
+                        Community<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -69,8 +70,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Blog
-                        <div>></div>
+                        Blog<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -78,8 +78,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        About Us
-                        <div>></div>
+                        About Us<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -87,8 +86,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        All Products
-                        <div>></div>
+                        All Products<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -96,8 +94,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        Account
-                        <div>></div>
+                        Account<i class="fa-solid fa-angle-down"></i>
                     </a>
                     <ul>
                         <li></li>
@@ -260,9 +257,9 @@
                     <div class="s3-price">Rs. 499.00</div>
                     <div class="add-wish">
                         <div class="add-rem">
-                            <div class="remove-btn"><i class="fa-solid fa-plus"></i></div>
-                            <input type="number" min="1">
-                            <div class="add-btn"><i class="fa-solid fa-minus"></i></div>
+                            <div class="remove-btn"><i class="fa-solid fa-minus"></i></div>
+                            <input type="number" min="1" class="qty">
+                            <div class="add-btn"><i class="fa-solid fa-plus"></i></div>
                         </div>
                         <div class="wish"><i class="fa-regular fa-heart"></i></div>
                     </div>
@@ -386,16 +383,16 @@
             <h1>Achievements & More</h1>
             <div class="s10-c1">
                 <img src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/1663993437786.jpg?v=1664784731&width=400" alt="Image" class="s10-i1">
-                <div class="s10-info1">Top 500 D2C Challenger Brands of India by YourStory Media</div>
             </div>
             <div class="s10-c2">
                 <img src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/WhatsApp_Image_2022-10-03_at_1.23.19_PM.jpg?v=1664784954&width=700" alt="Image" class="s10-i1">
-                <div class="s10-info2">Top 100 D2C Brand 2022 by Indian Retailer</div>
             </div>
             <div class="s10-c3">
                 <img src="https://cdn.shopify.com/s/files/1/0645/9650/8925/files/1653842881366.jpg?v=1664785208&width=400" alt="Image" class="s10-i1">
-                <div class="s10-info3">Forbes 30 Under 30</div>
             </div>
+            <h2 class="s10-info1">Top 500 D2C Challenger Brands of India by YourStory Media</h2>
+            <h2 class="s10-info2">Top 100 D2C Brand 2022 by Indian Retailer</h2>
+            <h2 class="s10-info3">Forbes 30 Under 30</h2>
         </section>
         <section class="section-11 sec-def-0">
             <h1>As Featured In</h1>
@@ -501,16 +498,18 @@
         <div class="footer-1 foot">
             <h1>Get in touch</h1>
             <div class="f1-content">
-                <div class="email">support@amrutam.co.in</div>
-                <div class="phone">+91 9713171999</div>
-                <div class="socials">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-twitter"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-pinterest"></i>
-                    <i class="fa-brands fa-square-youtube"></i>
-                </div>
+                <ul>
+                    <li class="email">support@amrutam.co.in</li>
+                    <li class="phone">+91 9713171999</li>
+                    <li class="socials">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-pinterest"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="footer-2 foot">
@@ -553,7 +552,7 @@
             <div class="f1-content">
                 <h2>Subscribe to our Newsletter and join Amrutam Family today!</h2>
                 <div class="subscribe">
-                    <input type="text">
+                    <input type="text" placeholder="your email here">
                     <button>Subscribe</button>
                 </div>
             </div>
